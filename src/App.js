@@ -127,6 +127,8 @@ function App() {
       default:
         return null;
     }
+
+    return null;
   })
   
   return (

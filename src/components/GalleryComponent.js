@@ -28,7 +28,7 @@ export default function GalleryComponent(props) {
           return (
             <div className={`galleryImg ${current ? 'current' : 'hidden'}`} ref={current ? currentImgRef : null} id={`slide-${i}`} key={i}>
               {recipe.name}
-              <img src={recipe.url} />
+              <img src={recipe.url} alt={`${recipe.name} recipe`} />
               </div>
           )
         })}
