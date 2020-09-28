@@ -1,0 +1,24 @@
+.gallery-container {
+  display: flex;
+}
+
+.slide {
+  height: 4em;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.gallery {
+  overflow: hidden;
+  max-height: 20em;
+  
+}
+
+.current {
+  font-weight: bold;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
