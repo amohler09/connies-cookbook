@@ -1,0 +1,30 @@
+.recipe-card {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+
+  .name {
+    font-family: 'Helvetica Neue';
+    font-size: 1.5rem;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: -8px 10px 5px rgba(139, 69, 19, 0.475);
+    padding: 2%;
+    background-color: rgba(139, 69, 19, 0.756);
+    z-index: 88;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  & img {
+    margin: auto;
+    transform: scale(3); 
+    filter: sepia(.8);
+  }
+  
+}
+
+
