@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
-import './GalleryComponent.scss'
+import RecipeCard from './RecipeCard';
+import './GalleryComponent.scss';
 
 export default function GalleryComponent(props) {
   const [currentImg, setCurrentImg] = useState(0);
@@ -17,23 +18,20 @@ export default function GalleryComponent(props) {
   const moveRight = () => currentImg < recipes.length - 1 ? setCurrentImg(currentImg + 1) : setCurrentImg(0);
 
   return (
-    <div className='gallery-container'>
-      <button onClick={moveLeft}>L</button>
+    <div className='gallery-flex'>
+      <button onClick={moveLeft}><i class="fas fa-angle-left"></i></button>
         {/* -map through recipe category passed as props
         -change className to hidden/current depending on current index vs. currentImg #
         -if image should be the current one, add the useRef hook to connect the actions */}
-      <div className='gallery'>
         {recipes.map((recipe, i) => {
           const current = i === currentImg;
           return (
-            <div className={`galleryImg ${current ? 'current' : 'hidden'}`} ref={current ? currentImgRef : null} id={`slide-${i}`} key={i}>
-              {recipe.name}
-              <img src={recipe.url} alt={`${recipe.name} recipe`} />
+            <div className={`card ${current ? 'current' : 'hidden'}`} ref={current ? currentImgRef : null} id={`${recipe.name} recipe`} key={i}>
+              <RecipeCard {...recipe} />
               </div>
           )
         })}
-      </div>
-      <button onClick={moveRight}>R</button>
+      <button onClick={moveRight}><i class="fas fa-angle-right"></i></button>
     </div>
   )
 }

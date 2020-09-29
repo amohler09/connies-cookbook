@@ -1,24 +1,36 @@
-.gallery-container {
+.gallery-flex {
   display: flex;
-}
+  margin: 5% auto;
+  
 
-.slide {
-  height: 4em;
-  vertical-align: middle;
-  text-align: center;
-}
+    & button {
+      margin: auto;
+      background: none;
+      border: none;
+      padding: 3%;
 
-.gallery {
-  overflow: hidden;
-  max-height: 20em;
+      &:hover {
+        background-color: rgba(139, 69, 19, 0.619);
+        border-radius: 5px;
+        
+        
+      }
+
+      .fas {
+        font-size: 1.5rem;
+        color: rgba(139, 69, 19, 0.824);
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+    
+
   
 }
 
-.current {
-  font-weight: bold;
-  color: red;
-}
 
-.hidden {
-  display: none;
-}
+
+
+
