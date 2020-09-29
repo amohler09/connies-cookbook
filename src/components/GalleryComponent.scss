@@ -1,6 +1,7 @@
 .gallery-flex {
   display: flex;
   margin: 5% auto;
+  // height: 150px;
   
 
     & button {
@@ -8,6 +9,7 @@
       background: none;
       border: none;
       padding: 3%;
+      outline: none;
 
       &:hover {
         background-color: rgba(139, 69, 19, 0.619);

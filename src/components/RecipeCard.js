@@ -8,7 +8,7 @@ export default function RecipeCard(recipe) {
     <div className='recipe-card'>
       
       <p className='name'>{recipe.name}</p>
-      <img src={recipe.url} />
+      <img src={recipe.url} className={recipe.orientation === 'horizontal' ? 'horizontal' : ''}/>
     </div>
   )
 }
