@@ -17,7 +17,7 @@ const RecipeData = [
     notes: 'need to crop image'
   },
   {
-    url: require('./img/1-2.jpeg'),
+    url: require('./img/1-3.jpeg'),
     name: 'Homeade Chili Powder',
     category1: "SEASONINGS & MARINADES",
     category2: '',
@@ -25,14 +25,14 @@ const RecipeData = [
     notes: 'need to crop image'
   },
   {
-    url: require('./img/1-3.jpeg'),
+    url: require('./img/999.jpeg'),
     name: 'Pennsylvania Quiche',
     category1: "SMALL PLATES & SNACKS",
     category2: '',
     orientation: 'horizontal',
   },
   {
-    url: require('./img/1-3.jpeg'),
+    url: require('./img/998.jpeg'),
     name: 'Pennsylvania Pickled Beets & Eggs',
     category1: "SMALL PLATES & SNACKS",
     category2: "SIDES",
@@ -54,7 +54,7 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/1-5.jpeg'),
+    url: require('./img/1-5-2.jpeg'),
     name: 'Spicy Bloody Mary',
     category1: "DRINKS",
     category2: '',
@@ -68,14 +68,14 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/2.jpeg'),
+    url: require('./img/2-2.jpeg'),
     name: 'Old-Fashioned Blueberry Muffins',
     category1: "BREAKFAST",
     category2: "MUFFINS",
     orientation: 'vertical',
   },
   {
-    url: require('./img/3.jpeg'),
+    url: require('./img/3-2.jpeg'),
     name: 'High-Top Muffins',
     category1: "BREAKFAST",
     category2: "MUFFINS",
@@ -83,14 +83,14 @@ const RecipeData = [
     notes: 'add lemony blueberry variation'
   },
   {
-    url: require('./img/3.jpeg'),
+    url: require('./img/3-3.jpeg'),
     name: 'Cheese-Stuffed Pecan Pumpkin Muffins',
     category1: "BREAKFAST",
     category2: "MUFFINS",
     orientation: 'vertical',
   },
   {
-    url: require('./img/3.jpeg'),
+    url: require('./img/3-4.jpeg'),
     name: 'Crunchy Lemon-Nut Muffins',
     category1: "BREAKFAST",
     category2: "MUFFINS",
@@ -104,7 +104,7 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/4.jpeg'),
+    url: require('./img/4-2.jpeg'),
     name: 'Bacon & Corn Muffins',
     category1: "BREAKFAST",
     category2: "MUFFINS",
@@ -119,7 +119,7 @@ const RecipeData = [
     notes: 'recipe from the 60s'
   },
   {
-    url: require('./img/5.jpeg'),
+    url: require('./img/5-2.jpeg'),
     name: 'Stuffed French Toast from Walt Disney World Polynesian Village Resort',
     category1: "BREAKFAST",
     category2: '',
@@ -133,7 +133,7 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/6.jpeg'),
+    url: require('./img/6-2.jpeg'),
     name: 'Crab Imperial',
     category1: "SIDES",
     category2: "SEAFOOD",
@@ -141,7 +141,7 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/7.jpeg'),
+    url: require('./img/7-3.jpeg'),
     name: 'Sesame-Topped Water Crackers',
     category1: "BREADS & CRACKERS",
     category2: "SMALL PLATES & SNACKS",
@@ -155,10 +155,17 @@ const RecipeData = [
     orientation: 'horizontal',
   },
   {
-    url: require('./img/9.jpeg'),
+    url: require('./img/9-3.jpeg'),
     name: 'Peanut Butter Bread',
     category1: "BREADS & CRACKERS",
     category2: "DESSERTS",
+    orientation: 'vertical',
+  },
+  {
+    url: require('./img/9-2.jpeg'),
+    name: 'Fiesta Bread',
+    category1: "BREADS & CRACKERS",
+    category2: "",
     orientation: 'vertical',
   },
   {
@@ -166,13 +173,6 @@ const RecipeData = [
     name: 'Curried Puffs with Parmesean & Chives',
     category1: "SMALL PLATES & SNACKS",
     category2: "BREADS & CRACKERS",
-    orientation: 'vertical',
-  },
-  {
-    url: require('./img/9.jpeg'),
-    name: 'Fiesta Bread',
-    category1: "BREADS & CRACKERS",
-    category2: '',
     orientation: 'vertical',
   },
   {
@@ -197,7 +197,7 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/12,20.jpeg'),
+    url: require('./img/12,20-2.jpeg'),
     name: 'Pineapple Cheese Spread',
     category1: "SPREADS & DIPS",
     category2: '',
@@ -211,28 +211,28 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/13-1,24.jpeg'),
+    url: require('./img/13-1,24-2.jpeg'),
     name: 'Lox & Cream Cheese Spread',
     category1: "SPREADS & DIPS",
     category2: "SEAFOOD",
     orientation: 'vertical',
   },
   {
-    url: require('./img/13-2.jpeg'),
+    url: require('./img/84.jpeg'),
     name: 'Hickory Quick BBQ Sauce',
     category1: "SAUCES",
     category2: '',
     orientation: 'vertical',
   },
   {
-    url: require('./img/13-2.jpeg'),
+    url: require('./img/84-2.jpeg'),
     name: 'Garlic Salsa',
     category1: "SPREADS & DIPS",
     category2: '',
     orientation: 'vertical',
   },
   {
-    url: require('./img/13-2.jpeg'),
+    url: require('./img/84-3.jpeg'),
     name: 'Jamaican Barbecue Sauce',
     category1: "SAUCES",
     category2: '',
@@ -246,7 +246,7 @@ const RecipeData = [
     orientation: 'horizontal',
   },
   {
-    url: require('./img/14.jpeg'),
+    url: require('./img/14-2.jpeg'),
     name: 'Mushroom Marinade',
     category1: "SEASONINGS & MARINADES",
     category2: '',
@@ -260,7 +260,7 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/15,18.jpeg'),
+    url: require('./img/15,18-2.jpeg'),
     name: 'Asparagus Spear Sandwiches',
     category1: "SMALL PLATES & SNACKS",
     category2: '',
@@ -289,6 +289,13 @@ const RecipeData = [
     orientation: 'horizontal',
   },
   {
+    url: require('./img/19-2.jpeg'),
+    name: 'Tomatoes Filled with Corn Pudding',
+    category1: "SMALL PLATES & SNACKS",
+    category2: "VEGGIE",
+    orientation: 'horizontal',
+  },
+  {
     url: require('./img/21.jpeg'),
     name: 'Seafood Quiche Squares',
     category1: "SMALL PLATES & SNACKS",
@@ -303,7 +310,7 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/24,53.jpeg'),
+    url: require('./img/24,53-2.jpeg'),
     name: "Tomato Spinach Salad",
     category1: "SALADS & DRESSINGS",
     category2: "",
@@ -331,7 +338,7 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/28.jpeg'),
+    url: require('./img/27-2.jpeg'),
     name: 'Herbed Vinegars',
     category1: "SALADS & DRESSINGS",
     category2: '',
@@ -352,11 +359,18 @@ const RecipeData = [
     orientation: 'horizontal',
   },
   {
-    url: require('./img/30.jpeg'),
+    url: require('./img/30-2.jpeg'),
     name: "Connie's Poppy Seed Dressing",
     category1: "SALADS & DRESSINGS",
     category2: '',
     orientation: 'square',
+  },
+  {
+    url: require('./img/30.jpeg'),
+    name: 'Chili Pasta Salad',
+    category1: "SMALL PLATES & SNACKS",
+    category2: "VEGGIE",
+    orientation: 'horizontal',
   },
   {
     url: require('./img/31.jpeg'),
@@ -366,15 +380,22 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/31.jpeg'),
+    url: require('./img/31-3.jpeg'),
     name: 'Creamy Italian Dressing',
     category1: "SALADS & DRESSINGS",
     category2: '',
     orientation: 'vertical',
   },
   {
-    url: require('./img/31.jpeg'),
+    url: require('./img/31-4.jpeg'),
     name: 'Blue Cheese Dressing',
+    category1: "SALADS & DRESSINGS",
+    category2: '',
+    orientation: 'vertical',
+  },
+  {
+    url: require('./img/31-2.jpeg'),
+    name: 'Buttermilk Salad Dressing',
     category1: "SALADS & DRESSINGS",
     category2: '',
     orientation: 'vertical',
@@ -422,7 +443,7 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/37.jpeg'),
+    url: require('./img/37-2.jpeg'),
     name: 'Conch Chowder II',
     category1: "SOUPS",
     category2: "SEAFOOD",
@@ -480,6 +501,13 @@ const RecipeData = [
   {
     url: require('./img/45.jpeg'),
     name: 'Creamy Potato Soup with Roasted Garlic',
+    category1: "SOUPS",
+    category2: "VEGGIE",
+    orientation: 'vertical',
+  },
+  {
+    url: require('./img/45-2.jpeg'),
+    name: 'Garlic Soup',
     category1: "SOUPS",
     category2: "VEGGIE",
     orientation: 'vertical',
@@ -578,7 +606,7 @@ const RecipeData = [
     orientation: 'horizontal',
   },
   {
-    url: require('./img/59.jpeg'),
+    url: require('./img/59-2.jpeg'),
     name: "Barb's Baked Beans",
     category1: "SIDES",
     category2: '',
@@ -609,7 +637,7 @@ const RecipeData = [
   },
   {
     url: require('./img/63.jpeg'),
-    name: 'Chicken Tchoupitoulas',
+    name: 'Chicken Tchoupitoulas with Bearnaise Sauce',
     category1: "ENTREES",
     category2: "CHICKEN",
     orientation: 'vertical',
@@ -644,7 +672,7 @@ const RecipeData = [
     orientation: 'horizontal',
   },
   {
-    url: require('./img/67.jpeg'),
+    url: require('./img/67-2.jpeg'),
     name: 'Beef Wellington',
     category1: "ENTREES",
     category2: "BEEF",
@@ -658,7 +686,7 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/68.jpeg'),
+    url: require('./img/68-2.jpeg'),
     name: 'South-of-the-Border Lasagna',
     category1: "ENTREES",
     category2: "BEEF",
@@ -749,6 +777,13 @@ const RecipeData = [
     orientation: 'horizontal',
   },
   {
+    url: require('./img/80-2.jpeg'),
+    name: 'Steak Au Poivre from Strawberry Hill',
+    category1: "ENTREES",
+    category2: "BEEF",
+    orientation: 'square',
+  },
+  {
     url: require('./img/82.jpeg'),
     name: 'Veal & Crabmeat Medici',
     category1: "ENTREES",
@@ -806,7 +841,7 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/90.jpeg'),
+    url: require('./img/90-2.jpeg'),
     name: 'Magic Lemon Meringue Pie',
     category1: "DESSERTS",
     category2: 'Pie',
@@ -848,7 +883,14 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/96.jpeg'),
+    url: require('./img/95.jpeg'),
+    name: 'Chocolate Cheesecake with Apricot Glaze',
+    category1: "DESSERTS",
+    category2: 'Cheesecake',
+    orientation: 'vertical',
+  },
+  {
+    url: require('./img/96-2.jpeg'),
     name: 'Cafe au Lait Cheesecake',
     category1: "DESSERTS",
     category2: 'Cheesecake',
@@ -862,7 +904,7 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/97.jpeg'),
+    url: require('./img/97-2.jpeg'),
     name: 'Carameled Apple Cheesecake',
     category1: "DESSERTS",
     category2: 'Cheesecake',
@@ -876,14 +918,14 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/98,104.jpeg'),
+    url: require('./img/98,104-3.jpeg'),
     name: 'Peanut Butter Football Cake',
     category1: "DESSERTS",
     category2: 'Cake',
     orientation: 'horizontal',
   },
   {
-    url: require('./img/98,104.jpeg'),
+    url: require('./img/98,104-2.jpeg'),
     name: 'Three Ginger Gingerbread Cake',
     category1: "DESSERTS",
     category2: 'Cake',
@@ -897,7 +939,7 @@ const RecipeData = [
     orientation: 'horizontal',
   },
   {
-    url: require('./img/99.jpeg'),
+    url: require('./img/99-2.jpeg'),
     name: 'Coffee Cake',
     category1: "DESSERTS",
     category2: 'Cake',
@@ -932,8 +974,15 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/102-2.jpeg'),
+    url: require('./img/102-2-2.jpeg'),
     name: 'Crumb Top Deep Dish Apple Pie',
+    category1: "DESSERTS",
+    category2: 'Pie',
+    orientation: 'horizontal',
+  },
+  {
+    url: require('./img/102-1-2.jpeg'),
+    name: 'Praline Pumpkin Pie',
     category1: "DESSERTS",
     category2: 'Pie',
     orientation: 'horizontal',
@@ -968,6 +1017,13 @@ const RecipeData = [
   },
   {
     url: require('./img/108.jpeg'),
+    name: 'Fuzzy Navel Cake',
+    category1: "DESSERTS",
+    category2: 'Cake',
+    orientation: 'horizontal',
+  },
+  {
+    url: require('./img/108-2.jpeg'),
     name: 'Kahlua Cake',
     category1: "DESSERTS",
     category2: 'Cake',
@@ -1002,7 +1058,7 @@ const RecipeData = [
     orientation: 'vertical',
   },
   {
-    url: require('./img/112.jpeg'),
+    url: require('./img/113.jpeg'),
     name: 'Chocolate Chip Cookies',
     category1: "DESSERTS",
     category2: 'Cookies',
