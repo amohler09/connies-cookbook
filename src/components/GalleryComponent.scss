@@ -12,15 +12,20 @@
       outline: none;
 
       &:hover {
-        background-color: rgba(139, 69, 19, 0.619);
+        background-color: #1f41a6bc;
         border-radius: 5px;
-        
-        
+
+        & .fas {
+          color: #5abfa3;
+          padding: 10%;
+          
+        }
       }
 
       .fas {
         font-size: 1.5rem;
-        color: rgba(139, 69, 19, 0.824);
+        color: #1f41a6;
+        text-shadow: -1px 1px 8px #1b2fa6;
       }
     }
 
