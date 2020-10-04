@@ -32,16 +32,16 @@ function App() {
   
   categorySorter(recipes, cookbook);
 
-  console.log(cookbook)
+  // console.log(cookbook)
 
 
   
   return (
     <main>
       <Switch>
-     <Route exact path='/' component={Home} />
-     <Route path='/:category' children={<CategorySummaryPage/>} />
-     <Route path='/:recipe' children={<RecipePage/>} />
+        <Route path='/Categories/:category' render={() => <CategorySummaryPage cookbook={cookbook}  />} />
+        <Route path='/:recipe' render={() => <RecipePage cookbook={cookbook} />} />
+        <Route exact path='/' render={() => <Home cookbook={cookbook} />} />
      </Switch>
     </main>
   );
