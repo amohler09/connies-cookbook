@@ -1,11 +1,15 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
-export default function CategorySummaryPage() {
+export default function CategorySummary(cookbook) {
+  console.log('categorysummary', cookbook)
 
-  let { category } = useParams();
+  const { category } = useParams();
+
+  const history = useHistory();
 
   return (
-    <div>It's working!</div>
+    <div>{category}</div>
   )
 }

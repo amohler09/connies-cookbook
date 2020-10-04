@@ -1,18 +1,11 @@
-import React, { useState } from 'react';
-import { Route, Link, Switch } from 'react-router-dom';
+import React from 'react';
 
-import RecipePage from '../components/RecipePage'
-import CategorySummaryPage from '../components/CategorySummaryPage'
+import GalleryComponent from '../components/GalleryComponent';
 
 import './Home.scss'
-import GalleryComponent from '../components/GalleryComponent';
 
 
 export default function Home({ cookbook }) {
- 
-  // console.log(cookbook)
-  
-  
   return (
     <div className='container'>
       <div className='hero'>
@@ -33,81 +26,14 @@ export default function Home({ cookbook }) {
         <p>I created this website to hold only a few of the recipes that I thought sounded either delicious or just too crazy to work out, and I plan on continuing to update this with more of her recipes in time as well as typed-out, printable versions of each recipe. I scanned each picture from her original books myself and edited each one to preserve as much of the detail as possible - from the taped down edges to my grandma's handwritten enhancements. It is amazing how much thought and effort went into each meal and how families looked at mealtime as a gathering to share ideas, stories, and laughter. It’s a pretty far cry from the quick and convenient lives we all lead today. I hope that you find her recipes as interesting as I do, and that her memory may continue to live on through these pages.</p>
         <p className='intro-bottom'>*All nutritional information listed in these recipes are estimates only.</p>
       </div>
-      <h2>Categories</h2>
+        <h2>Categories</h2>
       <div className='categories'>
         {cookbook.map((category, i) => (
           <div className='category' key={i}>
-          <GalleryComponent {...category}/>
-
-
-          {/* <Route path='/:category' component={<CategorySummaryPage cookbook={cookbook}/>} />
-          <Route path='/:recipe' render={() => <RecipePage/>} /> */}
-
+            <GalleryComponent {...category}/>
           </div>
         ))}
-      
-        
-      {/* <Link to='Breakfast'>Breakfast</Link> */}
-      {/* <GalleryComponent recipes={categories.Breakfast} category='Breakfast' /> */}
-      {/* <Route path='/Breakfast' component={GalleryComponent} /> */}
-        {/* <GalleryComponent {...categories.Breakfast} />
-        </Route> */}
       </div>
-
-      {/* <div className='categories'>
-        <div className='category'>
-        <h3>Breakfast</h3>
-        <GalleryComponent {...allCategories.Breakfast} />
-        </div>
-        <div className='category'>
-        <h3>Muffins</h3>
-        <GalleryComponent {...allCategories.Muffins} />
-        </div>
-        <div className='category'>
-        <h3>Snacks & Small Plates</h3>
-        <GalleryComponent {...allCategories.SmallPlatesSnacks} />
-        </div>
-        <div className='category'>
-        <h3>Salads & Dressings</h3>
-        <GalleryComponent {...allCategories.SaladsDressings} />
-        </div>
-        <div className='category'>
-        <h3>Soups</h3>
-        <GalleryComponent {...allCategories.Soups} />
-        </div>
-        <div className='category'>
-        <h3>Spreads & Dips</h3>
-        <GalleryComponent {...allCategories.SpreadsDips} />
-        </div>
-        <div className='category'>
-        <h3>Breads & Crackers</h3>
-      <GalleryComponent {...allCategories.BreadsCrackers} />
-      </div>
-      <div className='category'>
-      <h3>Entrees</h3>
-        <GalleryComponent {...allCategories.Entrees} />
-        </div>
-        <div className='category'>
-        <h3>Side Dishes</h3>
-      <GalleryComponent {...allCategories.Sides} />
-      </div>
-      <div className='category'>
-        <h3>Desserts</h3>
-        <GalleryComponent {...allCategories.Desserts} />
-        </div>
-        <div className='category'>
-        <h3>Drinks</h3>
-        <GalleryComponent {...allCategories.Drinks} />
-        </div>
-        <div className='category'>
-        <h3>Sauces</h3>
-        <GalleryComponent {...allCategories.Sauces} />
-        </div>
-        <div className='category'>
-        <h3>Seasonings & Marinades</h3>
-        <GalleryComponent  {...allCategories.SeasoningsMarinades} />
-        </div>
-      </div> */}
      </div>
-       )
+   )
   }

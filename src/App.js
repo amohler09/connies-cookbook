@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import { Route, Switch } from 'react-router-dom';
 
 import Home from './pages/Home';
@@ -10,7 +11,6 @@ import {categorySorter} from './helpers/categorySorter'
 import './App.css';
 
 const recipes = require('./recipes.data');
-
 
 function App() {
   const [cookbook] = useState([
@@ -29,12 +29,8 @@ function App() {
     {'Spreads/Dips': []}
   ])
 
-  
+  //run the helper function and organize the cookbook
   categorySorter(recipes, cookbook);
-
-  // console.log(cookbook)
-
-
   
   return (
     <main>

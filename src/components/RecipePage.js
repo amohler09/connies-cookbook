@@ -1,14 +1,17 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-
-export default function RecipePage() {
-  let { recipe } = useParams();
+import { useHistory } from 'react-router-dom'
 
 
+export default function RecipePage(cookbook) {
+  console.log('recipepage', cookbook)
+  const history = useHistory();
+
+  const { recipe } = useParams();
 
   return (
     <div>
-      HEY! THERE!
+     RECIPE PAGE {recipe}
     </div>
   )
 }
