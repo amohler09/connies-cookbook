@@ -109,9 +109,6 @@ nav,
 section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
 ol,
 ul {
 	list-style: none;
@@ -135,4 +132,5 @@ body {
   background-color: #5abfa3;
   background-image: url('./img/black-circle.png');
   background-repeat: space;
+  line-height: 1;
 }

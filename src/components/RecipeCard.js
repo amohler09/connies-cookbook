@@ -1,14 +1,24 @@
 import React from 'react';
+import { Route, Switch, Link } from 'react-router-dom';
+import RecipePage from '../components/RecipePage'
 import './RecipeCard.scss'
 
-export default function RecipeCard(recipe) {
-  console.log(recipe);
+export default function RecipeCard(props) {
+  const { category, name, orientation, url } = props;
+  // console.log(props);
+
+
   
   return (
     <div className='recipe-card'>
+      {/* <Link className='name' to={`/${props.name}`}>{props.name}</Link> */}
       
-      <p className='name'>{recipe.name}</p>
-      <img src={recipe.url} className={recipe.orientation === 'horizontal' ? 'horizontal' : ''}/>
+      <Link to={`/${name}`} className='name'>{name}</Link>
+      <img src={url} className={orientation === 'horizontal' ? 'horizontal' : ''}/>
+
+      {/* <Switch>
+        <Route path={`/${category}/:id`} children={<RecipePage />} />
+      </Switch> */}
     </div>
   )
 }
