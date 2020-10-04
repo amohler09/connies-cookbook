@@ -1,236 +1,18 @@
 import React, { useState } from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
 
+import RecipePage from '../components/RecipePage'
+import CategorySummaryPage from '../components/CategorySummaryPage'
+
 import './Home.scss'
 import GalleryComponent from '../components/GalleryComponent';
 
-const recipes = require('../recipes.data');
 
-export default function Home(props) {
-  // console.log(props)
-  const [cookbook] = useState([
-    {'Breads/Crackers': []},
-    {'Breakfast': []},
-    {'Desserts': []},
-    {'Drinks': []},
-    {'Entrees': []},
-    {'Muffins': []},
-    {'Salads/Dressings': []},
-    {'Sauces': []},
-    {'Seasonings/Marinades': []},
-    {'Sides': []},
-    {'Appetizers/Snacks': []},
-    {'Soups': []},
-    {'Spreads/Dips': []}
-  ])
+export default function Home({ cookbook }) {
+ 
+  // console.log(cookbook)
   
-  // const [cookbook] = useState(
-  //   {
-  //   BreadsCrackers: [],
-  //   Breakfast: [],
-  //   Desserts: [],
-  //   Drinks: [],
-  //   Entrees: [],
-  //   Lunch: [],
-  //   Muffins: [],
-  //   Pickling: [],
-  //   SaladsDressings: [],
-  //   Sauces: [],
-  //   SeasoningsMarinades: [],
-  //   Sides: [],
-  //   SmallPlatesSnacks: [],
-  //   Soups: [],
-  //   SpreadsDips: [],
-  // })
-
   
-
-  // recipes.RecipeData.map(recipe => {
-  //   switch(recipe.category1) {
-  //     case 'BREADS & CRACKERS':
-  //       cookbook[0].BreadsCrackers.push(recipe);
-  //       break;
-  //     case 'BREAKFAST':
-  //       cookbook[1].Breakfast.push(recipe);
-  //       break;
-  //     case 'DESSERTS':
-  //       cookbook[2].Desserts.push(recipe);
-  //       break;
-  //     case 'DRINKS':
-  //       cookbook[3].Drinks.push(recipe);
-  //       break;
-  //     case 'ENTREES':
-  //       cookbook[4].Entrees.push(recipe);
-  //       break;
-  //     case 'MUFFINS':
-  //       cookbook[5].Muffins.push(recipe);
-  //       break;
-  //     case 'SALADS & DRESSINGS':
-  //       cookbook[6].SaladsDressings.push(recipe);
-  //       break;
-  //     case 'SAUCES':
-  //       cookbook[7].Sauces.push(recipe);
-  //       break;
-  //     case 'SEASONINGS & MARINADES':
-  //       cookbook[8].SeasoningsMarinades.push(recipe);
-  //       break;
-  //     case 'SIDES':
-  //       cookbook[9].Sides.push(recipe);
-  //       break;
-  //     case 'SMALL PLATES & SNACKS':
-  //       cookbook[10].SmallPlatesSnacks.push(recipe);
-  //       break;
-  //     case 'SOUPS':
-  //       cookbook[11].Soups.push(recipe);
-  //       break;
-  //     case 'SPREADS & DIPS':
-  //       cookbook[12].SpreadsDips.push(recipe)
-  //       break;
-  //     default:
-  //       return null;
-  //   }
-
-  //   switch(recipe.category2) {
-  //     case 'BREADS & CRACKERS':
-  //       cookbook[0].BreadsCrackers.push(recipe);
-  //       break;
-  //     case 'BREAKFAST':
-  //       cookbook[1].Breakfast.push(recipe);
-  //       break;
-  //     case 'DESSERTS':
-  //       cookbook[2].Desserts.push(recipe);
-  //       break;
-  //     case 'DRINKS':
-  //       cookbook[3].Drinks.push(recipe);
-  //       break;
-  //     case 'ENTREES':
-  //       cookbook[4].Entrees.push(recipe);
-  //       break;
-  //     case 'MUFFINS':
-  //       cookbook[5].Muffins.push(recipe);
-  //       break;
-  //     case 'SALADS & DRESSINGS':
-  //       cookbook[6].SaladsDressings.push(recipe);
-  //       break;
-  //     case 'SAUCES':
-  //       cookbook[7].Sauces.push(recipe);
-  //       break;
-  //     case 'SEASONINGS & MARINADES':
-  //       cookbook[8].SeasoningsMarinades.push(recipe);
-  //       break;
-  //     case 'SIDES':
-  //       cookbook[9].Sides.push(recipe);
-  //       break;
-  //     case 'SMALL PLATES & SNACKS':
-  //       cookbook[10].SmallPlatesSnacks.push(recipe);
-  //       break;
-  //     case 'SOUPS':
-  //       cookbook[11].Soups.push(recipe);
-  //       break;
-  //     case 'SPREADS & DIPS':
-  //       cookbook[12].SpreadsDips.push(recipe)
-  //       break;
-  //     default:
-  //       return null;
-  //   }
-
-  //   return null;
-  // })
-
-  recipes.RecipeData.map(recipe => {
-    switch(recipe.category1) {
-      case 'BREADS & CRACKERS':
-        cookbook[0]['Breads/Crackers'].push(recipe);
-        break;
-      case 'BREAKFAST':
-        cookbook[1]['Breakfast'].push(recipe);
-        break;
-      case 'DESSERTS':
-        cookbook[2]['Desserts'].push(recipe);
-        break;
-      case 'DRINKS':
-        cookbook[3]['Drinks'].push(recipe);
-        break;
-      case 'ENTREES':
-        cookbook[4]['Entrees'].push(recipe);
-        break;
-      case 'MUFFINS':
-        cookbook[5]['Muffins'].push(recipe);
-        break;
-      case 'SALADS & DRESSINGS':
-        cookbook[6]['Salads/Dressings'].push(recipe);
-        break;
-      case 'SAUCES':
-        cookbook[7]['Sauces'].push(recipe);
-        break;
-      case 'SEASONINGS & MARINADES':
-        cookbook[8]['Seasonings/Marinades'].push(recipe);
-        break;
-      case 'SIDES':
-        cookbook[9]['Sides'].push(recipe);
-        break;
-      case 'SMALL PLATES & SNACKS':
-        cookbook[10]['Appetizers/Snacks'].push(recipe);
-        break;
-      case 'SOUPS':
-        cookbook[11]['Soups'].push(recipe);
-        break;
-      case 'SPREADS & DIPS':
-        cookbook[12]['Spreads/Dips'].push(recipe)
-        break;
-      default:
-        return null;
-    }
-
-    switch(recipe.category2) {
-      case 'BREADS & CRACKERS':
-        cookbook[0]['Breads/Crackers'].push(recipe);
-        break;
-      case 'BREAKFAST':
-        cookbook[1]['Breakfast'].push(recipe);
-        break;
-      case 'DESSERTS':
-        cookbook[2]['Desserts'].push(recipe);
-        break;
-      case 'DRINKS':
-        cookbook[3]['Drinks'].push(recipe);
-        break;
-      case 'ENTREES':
-        cookbook[4]['Entrees'].push(recipe);
-        break;
-      case 'MUFFINS':
-        cookbook[5]['Muffins'].push(recipe);
-        break;
-      case 'SALADS & DRESSINGS':
-        cookbook[6]['Salads/Dressings'].push(recipe);
-        break;
-      case 'SAUCES':
-        cookbook[7]['Sauces'].push(recipe);
-        break;
-      case 'SEASONINGS & MARINADES':
-        cookbook[8]['Seasonings/Marinades'].push(recipe);
-        break;
-      case 'SIDES':
-        cookbook[9]['Sides'].push(recipe);
-        break;
-      case 'SMALL PLATES & SNACKS':
-        cookbook[10]['Appetizers/Snacks'].push(recipe);
-        break;
-      case 'SOUPS':
-        cookbook[11]['Soups'].push(recipe);
-        break;
-      case 'SPREADS & DIPS':
-        cookbook[12]['Spreads/Dips'].push(recipe)
-        break;
-      default:
-        return null;
-    }
-
-    return null;
-  })
-
-  console.log(cookbook)
-
   return (
     <div className='container'>
       <div className='hero'>
@@ -256,6 +38,10 @@ export default function Home(props) {
         {cookbook.map((category, i) => (
           <div className='category' key={i}>
           <GalleryComponent {...category}/>
+
+
+          {/* <Route path='/:category' component={<CategorySummaryPage cookbook={cookbook}/>} />
+          <Route path='/:recipe' render={() => <RecipePage/>} /> */}
 
           </div>
         ))}
