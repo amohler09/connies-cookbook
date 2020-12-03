@@ -89,9 +89,9 @@
   .intro {
     max-width: 90%;
     text-align: left;
-    margin: 5% auto 10%;
+    margin: 5% auto;
     text-indent: 50px;
-    line-height: 1.5;
+    line-height: 1.25;
     background-color: #f2dfce87;
     padding: 5%;
     border-radius: 10px;
@@ -121,6 +121,7 @@
   .categories {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     margin: auto;
 
