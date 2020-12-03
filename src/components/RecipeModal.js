@@ -25,17 +25,15 @@ export default function RecipeModal() {
   console.log(active)
 
   return (
-    <div 
-      className='modal-bg'>
+    <div className='modal-bg' onClick={back}>
       <div className='modal'>
         <div className='top'>
-        <i class="fas fa-chevron-left" onClick={back}> Back to Recipes</i>
-        <h2>{active}</h2>
+          <i class="fas fa-chevron-left" onClick={back}></i>
+          <h2>{active}</h2>
         </div>
-        <img style={{
-          width: '60%',
-          margin: '0 auto 3%'
-        }} src={activeRecipe.url} alt={`${activeRecipe.name} recipe`}/>
+        <div style={{ backgroundImage: `linear-gradient(to right, red, green)`,
+                      width: '100px' }} ></div>
+          {/* <img src={activeRecipe.url} alt={`${activeRecipe.name} recipe`}/> */}
       </div>
     </div>
   )

@@ -124,7 +124,7 @@
     flex-wrap: wrap;
     margin: auto;
 
-    @media(max-width: 700px) {
+    @media(max-width: 500px) {
       flex-direction: column;
       align-content: center;
     }
@@ -132,7 +132,7 @@
     .category {
       max-width: 45%;
 
-      @media(max-width: 700px) {
+      @media(max-width: 500px) {
         max-width: 60%;
       }
     }

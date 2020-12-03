@@ -18,7 +18,6 @@ export default function GalleryComponent(props) {
   //create a ref to determine what will be the gallery
   const currentImgRef = useRef(null);
 
-
   // slideshow controls
   // if at the end/beginning of list, start over again
   const moveLeft = () => currentImg === 0 ? setCurrentImg(recipes.length - 1) : setCurrentImg(currentImg - 1);
