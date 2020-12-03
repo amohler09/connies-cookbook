@@ -38,7 +38,7 @@ function App() {
   let background = location.state && location.state.background
 
   // run the helper function and organize the cookbook
-  categorySorter(recipes, cookbook);
+  categorySorter(recipes.RecipeData, cookbook);
   
   return (
     <main>
