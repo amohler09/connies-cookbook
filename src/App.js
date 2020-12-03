@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { Route, Switch, useLocation, Redirect } from 'react-router-dom';
 
 import Home from './pages/Home';
-import RecipePage from './components/RecipePage'
 import CategorySummaryPage from './components/CategorySummaryPage'
 import RecipeModal from './components/RecipeModal'
 
