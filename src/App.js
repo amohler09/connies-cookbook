@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Route, Switch, useLocation } from 'react-router-dom';
+import { Route, Switch, useLocation, Redirect } from 'react-router-dom';
 
 import Home from './pages/Home';
 import RecipePage from './components/RecipePage'
@@ -34,7 +34,7 @@ function App() {
   let location = useLocation();
 
   // define a background which can be turned on/off based on the location
-  // when in category summary page, keep it displayed in background while modal is present
+  // when in category summary or home page, keep it displayed in background while modal is present
   let background = location.state && location.state.background
 
   // run the helper function and organize the cookbook
@@ -48,8 +48,8 @@ function App() {
         <Route exact path='/' render={() => <Home cookbook={cookbook} />} />
      </Switch>
 
-     {/* show the recipe modal when the category summary page is present */}
-     {!background && <Route path='/Recipes/:active' children={<RecipeModal />} />}
+     {/* show the recipe modal while keeping background present */}
+     {background ? <Route path='/Recipes/:active' children={<RecipeModal />} /> : <Redirect to='/' />}
     </main>
   );
 }
