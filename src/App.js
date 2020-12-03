@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { Route, Switch, useLocation, Redirect } from 'react-router-dom';
 
@@ -38,7 +38,9 @@ function App() {
   let background = location.state && location.state.background
 
   // run the helper function and organize the cookbook
-  categorySorter(recipes.RecipeData, cookbook);
+  useEffect(() => {
+    categorySorter(recipes.RecipeData, cookbook);
+  }, [cookbook])
   
   return (
     <main>
