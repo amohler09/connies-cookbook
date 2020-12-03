@@ -13,22 +13,16 @@ export default function RecipeModal() {
 
   const activeRecipe = recipes.RecipeData.filter((recipe, i) => recipe.name === active)[0];
 
-  console.log(active)
-
-
   const back = e => {
     e.stopPropagation();
     history.goBack();
   }
 
-  console.log(history)
-  console.log(active)
-
   return (
     <div className='modal-bg' onClick={back}>
       <div className='modal'>
         <div className='top'>
-          <i class="fas fa-chevron-left" onClick={back}></i>
+          <i class="fas fa-chevron-left" ></i>
           <h2>{active}</h2>
         </div>
         <div style={

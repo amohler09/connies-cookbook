@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import RecipeCard from './RecipeCard';
 
@@ -12,8 +12,6 @@ export default function GalleryComponent(props) {
 
   const category = Object.keys(props)[0].toString();
   const recipes = Object.values(props)[0];
-
-  const history = useHistory();
 
   //create a ref to determine what will be the gallery
   const currentImgRef = useRef(null);

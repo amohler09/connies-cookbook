@@ -7,7 +7,6 @@ import './RecipeCard.scss'
 export default function RecipeCard({ name, orientation, url }) {
   
   let location = useLocation();
-  console.log('location', location)
   
   return (
     <div className='recipe-card'>
