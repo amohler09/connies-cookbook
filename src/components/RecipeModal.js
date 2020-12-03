@@ -31,9 +31,11 @@ export default function RecipeModal() {
           <i class="fas fa-chevron-left" onClick={back}></i>
           <h2>{active}</h2>
         </div>
-        <div style={{ backgroundImage: `linear-gradient(to right, red, green)`,
-                      width: '100px' }} ></div>
-          {/* <img src={activeRecipe.url} alt={`${activeRecipe.name} recipe`}/> */}
+        <div style={
+          activeRecipe.orientation === 'vertical' ? { maxWidth: '90%' } : { maxWidth: '100%' }
+          } >
+          <img src={activeRecipe.url} alt={`${activeRecipe.name} recipe`}/>
+          </div>
       </div>
     </div>
   )
