@@ -30,7 +30,7 @@ export default function Home({ cookbook }) {
         <img src={Family} />
         <h2>Categories</h2>
       <div className='categories'>
-        {cookbook.map((category, i) => (
+        {cookbook && cookbook.map((category, i) => (
           <div className='category' key={i}>
             <GalleryComponent {...category}/>
           </div>
