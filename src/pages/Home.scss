@@ -22,46 +22,50 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 200px;
-        opacity: .5;
-        filter: saturate(.5);
+        // opacity: .5;
+        // filter: saturate(.5);
 
        
       }
 
     .g-1 {
       grid-area: one;
-      background-image: url('../img/cristian-newman-CeZypKDceQc-unsplash.jpg');
+      background-image: url('../img/IMG_0199.jpg');
 
     }
     
     .g-2 {
       grid-area: two;
-      background-image: url('../img/damir-bosnjak-VQ2L7t5qt_8-unsplash.jpg');
+      background-image: url('../img/IMG_0211.jpg');
 
     }
 
     .g-3 {
       grid-area: three;
-      background-image: url('../img/dulcey-lima-ydU-eneGPbw-unsplash.jpg');
+      background-image: url('../img/IMG_0214.jpg');
     }
 
      .g-4 {
       grid-area: four;
-      background-image: url('../img/tiago-muraro-pwMds57bapI-unsplash.jpg');
+      background-image: url('../img/IMG_0139.jpg');
+      background-position: left;
+
     }
 
     .g-5 {
       grid-area: five;
-      background-image: url('../img/ekaterina-shakharova-L4nwL3195U0-unsplash.jpg');
+      background-image: url('../img/IMG_0131.jpg');
+      background-position: bottom;
+
     }
 
     .g-6 {
       grid-area: six;
-      background-image: url('../img/annie-spratt-_0F_03SEF-M-unsplash.jpg');
+      background-image: url('../img/IMG_0205.jpg');
     }
 
     .hero-text {
-      background-color: #f26f63;
+      background-color: #ffb5b588;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -93,6 +97,7 @@
     text-indent: 50px;
     line-height: 1.25;
     background-color: #f2dfce87;
+    background-image: url('');
     padding: 5%;
     border-radius: 10px;
 
